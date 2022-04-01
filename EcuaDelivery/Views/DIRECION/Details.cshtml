@@ -1,0 +1,59 @@
+﻿@model EcuaDelivery.DIRECION
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DIRECION</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DIR_CALLE_P)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DIR_CALLE_P)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DIR_CALLE_S)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DIR_CALLE_S)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DIR_NUM_C)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DIR_NUM_C)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DIR_DETALLE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DIR_DETALLE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CIUDAD.CIU_NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CIUDAD.CIU_NOMBRE)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DIR_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
